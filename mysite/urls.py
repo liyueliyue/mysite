@@ -21,8 +21,10 @@ from app2 import views as add_views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^index/$',views.index),
-    url(r'^add/$',add_views.add),
-    url(r'^add/(\d+)/(\d+)$',add_views.add2),
-    url(r'^add3/$',add_views.add3),
+# name可以用在templates，models，views...中得到对应的网址，相当于给网址起个名字，
+# 只要这个名字不变，网址变了也能通过名字获取到。
+    url(r'^add/$',add_views.add,name="add"),
+    url(r'^add/(\d+)/(\d+)$',add_views.add2 ,name="add2"),
+    url(r'^add3/$',add_views.add3,name="add3"),
     url(r'^add_action/$',add_views.add_action),
 ]
