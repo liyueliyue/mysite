@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load bootstrap3 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+    <meta charset="UTF-8">
+    <title>欢迎进入xx系统</title>
+</head>
+<body>
+    <div class="container">
+        <h1>欢迎登录系统</h1>
+        <form method="post" action="/login_action/">
+            {% csrf_token %}
+            <input type="text" name="username" id="userId" placeholder="请输入用户名"><br>
+            <input type="password" name="pwd" id="id_password" placeholder="请输入密码"><br>
+            <button type="submit" id="buttom1">登录</button>
+        </form>
+    </div>
+</body>
+</html>

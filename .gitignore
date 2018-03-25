@@ -1,0 +1,7 @@
+.idea/
+*.pyc
+__pyc__.*
+__pyc__
+db.splite3
+__pycache__
+__pycache__
