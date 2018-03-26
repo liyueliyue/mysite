@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎光临</title>
+</head>
+<body>
+{#    显示字符串#}
+    {{ name }}
+{#    显示list中元素#}
+    {% for i in list1 %}
+        {{ i }}
+    {% endfor %}
+{#    1.for显示字典中key value#}
+    {% for i,j in dic.items %}
+        <a href="{{ j }}" target="_blank">{{ i }}</a>
+    {% endfor %}
+{#    2.获取变量形式显示字典中key value#}
+    购物地址：{{ dic2.key }}  网站：<a href="{{ dic2.value }}" target="_blank">点我</a>
+</body>
+</html>
