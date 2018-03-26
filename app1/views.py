@@ -21,3 +21,6 @@ def returnDic(request):
 def returnDic2(request):
     dic = {'key':'京东','value':'http://www.jd.com/'}
     return render(request,'home.html',{'dic2':dic})
+def returnForIf(request):
+    a = map(str,range(10))
+    return render(request,'home.html',{'a':a})
