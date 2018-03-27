@@ -24,3 +24,7 @@ def returnDic2(request):
 def returnForIf(request):
     a = map(str,range(10))
     return render(request,'home.html',{'a':a})
+
+def sum(request,a,b):
+    c = int(a) + int(b)
+    return render(request,'home.html',{'c':str(c)})

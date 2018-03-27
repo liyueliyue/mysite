@@ -28,8 +28,9 @@ urlpatterns = [
     url(r'^add3/$',add_views.add3,name="add3"),
     url(r'^add_action/$',add_views.add_action),
     # url(r'^home/$',views.returnString,name="home"),
-    url(r'^home/$',views.returnList),
+    # url(r'^home/$',views.returnList),
     # url(r'^home/$',views.returnDic),
     # url(r'^home/$',views.returnDic2),
     # url(r'^home/$',views.returnForIf),
+    url(r'^home/(\d+)/(\d+)$',views.sum)
 ]
