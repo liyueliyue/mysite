@@ -27,4 +27,7 @@ def returnForIf(request):
 
 def sum(request,a,b):
     c = int(a) + int(b)
-    return render(request,'home.html',{'c':str(c)})
+    return HttpResponse(str(c))
+    # return render(request,'home.html',{'c':str(c)})
+def home(request):
+    return render(request,"home.html")

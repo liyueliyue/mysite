@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'app1',
     'bootstrap3',
     'app2',
+    'app3_model',
 ]
 
 MIDDLEWARE_CLASSES = [

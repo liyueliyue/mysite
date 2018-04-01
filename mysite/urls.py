@@ -32,5 +32,6 @@ urlpatterns = [
     # url(r'^home/$',views.returnDic),
     # url(r'^home/$',views.returnDic2),
     # url(r'^home/$',views.returnForIf),
-    url(r'^home/(\d+)/(\d+)$',views.sum)
+    # url(r'^home/(\d+)/(\d+)$',views.sum),
+    url(r'^home/$',views.home)
 ]

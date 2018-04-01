@@ -28,6 +28,19 @@
         {{ i }}{% if forloop.first %},
         {% endif %}
     {% endfor %}
-{% url 'home' 2 9 %}
+
+{#在模板中显示当前登录的用户名#}
+<br>
+<br>
+{% if request.user.is_authentiated %}
+    {{ request.user }},您好
+{% else %}
+    请先登录
+{% endif %}
+{#获取当前的网址#}
+{{ request.path }}
+{#获取当前get参数#}
+{{ request.GET.urlencode }}
+<a href="{{ request.path }}" target="_blank">点击我跳转</a>
 </body>
 </html>
